@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMentors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87cfdf50a4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="/index.html">Tech<span>Mentors</span></a></div>
+            <ul class="menu">
+                <li><a href="/index.html" class='menu-btn'>Home</a></li>
+                <li><a href="/about.html" class='menu-btn'>About</a></li>
+                <li><a href="/contact.html" class='menu-btn'>Contact</a></li>
+                <li><a href="/courses.html" class='menu-btn'>Courses</a></li>
+                <li><a href="/login.html" class='menu-btn'>LogIn</a></li>
+                <li><a href="/join.html" class='menu-btn'>Join</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- courses -->
+    <section class="course-list" id="course-list">
+        <div class="max-width">
+            <h2 class="title">Courses</h2>
+            <div class="course-content">
+                <div class="column left">
+                    <div class="filters">
+                        <div class="filter">
+                            <p>Price $<span id="value-price"></span></p>
+                            <input type="range" min="1" max="100" value="100" class="slider" id="price">
+                        </div>
+                        <div class="filter">
+                            <p>Duartion <span id="value-duration"></span> mon</p>
+                            <input type="range" min="1" max="24" value="24" class="slider" id="duration">
+                        </div>
+                        <div class="filter">
+                            <label for="categories">Category</label>
+                            <select id="categories" name="categories">
+                                <option value="all">All</option>
+                                <option value="computerScience">computer Science</option>
+                                <option value="informationTechnology">Information Technology</option>
+                                <option value="dataScience">Data Science</option>
+                                <option value="cloudComputing">Cloud Computing</option>
+                                <option value="cyberSecurity">Cyber Security</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="prerequisites">Prerequisites</label>
+                            <select id="prerequisites" name="prerequisites">
+                                <option value="all">None</option>
+                                <option value="computerScience">Computer Architecture</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Filter</button>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-1.jpg" alt="">
+                            <div class="text">Introduction to Python</div>
+                            <div class="duration">$20&nbsp; &bull; &nbsp;3 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-2.jpg" alt="">
+                            <div class="text">Data sturcture and Algorithms</div>
+                            <div class="duration">$40&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-3.jpg" alt="">
+                            <div class="text">AWS Machine Learning</div>
+                            <div class="duration">$70&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-4.jpg" alt="">
+                            <div class="text">Linear Algebra for beginners</div>
+                            <div class="duration">$20&nbsp; &bull; &nbsp;1 Month</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-5.jpg" alt="">
+                            <div class="text">Computer Architecture</div>
+                            <div class="duration">$40&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-1.jpg" alt="">
+                            <div class="text">Introduction to Python</div>
+                            <div class="duration">$20&nbsp; &bull; &nbsp;3 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-2.jpg" alt="">
+                            <div class="text">Data sturcture and Algorithms</div>
+                            <div class="duration">$40&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-3.jpg" alt="">
+                            <div class="text">AWS Machine Learning</div>
+                            <div class="duration">$70&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-4.jpg" alt="">
+                            <div class="text">Linear Algebra for beginners</div>
+                            <div class="duration">$20&nbsp; &bull; &nbsp;1 Month</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-5.jpg" alt="">
+                            <div class="text">Computer Architecture</div>
+                            <div class="duration">$40&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-1.jpg" alt="">
+                            <div class="text">Introduction to Python</div>
+                            <div class="duration">$20&nbsp; &bull; &nbsp;3 Months</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/course-2.jpg" alt="">
+                            <div class="text">Data sturcture and Algorithms</div>
+                            <div class="duration">$40&nbsp; &bull; &nbsp;6 Months</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <span>Created By <a href="#">TechMentors</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+</html>
